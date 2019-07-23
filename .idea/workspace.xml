@@ -2,28 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3114aeaf-4184-4394-beab-8681d0db3ef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Vue.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class与style绑定/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/el、template、render、生命周期/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js模拟dom结构.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist/vue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app-ui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app-ui/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app-ui/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app-ui/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app-ui/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app-ui/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app-ui/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app-ui/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app-ui/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app-ui/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app-ui/src/main.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vue-app/src/router.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vue-app/src/views/About.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vue-app/src/views/Home.vue" afterDir="false" />
@@ -41,19 +19,7 @@
       <change afterPath="$PROJECT_DIR$/vue-app/vue-app2/src/router.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vue-app/vue-app2/src/views/About.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/vue-app/vue-app2/src/views/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-app2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/事件处理&amp;表单输入绑定/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/列表渲染/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/创建一个vue实例/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/动态组件和插槽/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/日历小组件/MyDate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/更改项目中的数据/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/更改项目中的数据/虚拟节点sanbbodm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/树形组件/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/树形组件/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/树形组件/my-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/组件基础/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/计算属性和监听器/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-app" beforeDir="false" afterPath="$PROJECT_DIR$/vue-app" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-app/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-app/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-app/src/App.vue" afterDir="false" />
@@ -67,6 +33,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
@@ -90,11 +59,6 @@
             <path>
               <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-app2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -133,12 +97,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563847965324</updated>
-      <workItem from="1563847966884" duration="1639000" />
+      <workItem from="1563847966884" duration="1890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1639000" />
+    <option name="totallyTimeSpent" value="1890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -164,5 +128,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js模拟dom结构.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
   </component>
 </project>
