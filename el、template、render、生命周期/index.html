@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/vue/2.5.18-beta.0/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        {{msg}}
+        <button @click = "change">Updated</button>
+    </div>
+    
+    <script>
+        // 1.el mount()--->挂载dom元素 
+        // 2、template:String -->AST({})抽象语法树--->render函数 -> VNode虚拟节点 -> 真实数据
+
+        //  初始化--> el ? --> y -->            template --> y-->  template:String                 -->AST({})抽象语法树--->render函数 -> VNode ->
+        //                     n -->$mount -->              n --> 拿到app.outerHTML(是一个String) 
+        // 
+
+
+        // vue生命周期
+        // 
+
+        const vm = new Vue({
+            el: "#app",
+
+            data: {
+                msg: "hello"
+            },
+            methods: {
+                a () {
+                    console.log('aaa');
+                },
+                change () {
+                    this.msg = 'Updated'
+                }
+            },
+            
+            // 上面还不存在
+
+            beforeCreate() {
+                console.log("-----beforeCreate--------")
+                console.log(this.msg)
+                console.log(this.a);
+                alert("beforeCreate");
+            },
+            //创建实例完毕
+            created () {
+                console.log("-----beforeCreate--------")
+                console.log(this.msg)
+                this.a();
+                alert("Created");
+            },
+            // 挂载数据前
+            beforeMount () {
+                alert('beforeMount')
+            },
+            // 挂载数据后
+            mounted () {
+                alert('mounted')
+            },
+            // 数据改变前
+            beforeUpdate () {
+                alert('beforeUpdate')
+            },
+            // 数据改变后
+            updated () {
+                alert('updated')
+            },
+            // 销毁前
+            beforeDestroy () {
+                alert('beforedes')
+            },
+            // 销毁       销毁之后挂载的东西就会失效了 
+            destroyed () {
+                alert('des')
+            }
+        })
+
+
+
+
+
+        // const vm = new Vue({
+        //     // el: '#app',
+        //     data: {
+        //         msg: 'hello world'
+        //     },
+        //     template: '<div>我是一个模板{{msg}}</div>',
+        //     // createElement是随便命名的，一般为h
+        //     render (createElement) {
+        //         return createElement('p',{
+        //             style:{
+        //                 color: 'red',
+        //                 fontSize: '12px'
+        //             },
+        //             class: ['red', 'green'],
+        //             // 因为domProps 的优先级高于下面的
+        //             // domProps: {
+        //             //     innerHTML: 'WWWW'
+        //             // }
+        //         }, [
+        //             createElement('h1'),
+        //             createElement('h2'),
+        //             createElement('h3')
+        //         ])
+        //     },
+            
+            
+        //     methods: {
+
+        //     }
+        // })
+        
+        // //除了使用 el 挂载数据， 还有使用Vue中的方法挂载
+
+        // vm.$mount('#app')
+
+    </script>
+
+
+</body>
+</html>

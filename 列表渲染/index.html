@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/vue/2.5.18-beta.0/vue.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+        }
+        ul {
+            margin: 100px;
+
+        }
+        li {
+            line-height: 30px;
+
+        }
+        p {
+            display: inline-block;
+
+        }
+        span {
+            border: 1px solid red;
+            color: red;
+            padding: 2px;
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="app">
+        <ul>
+            <li v-for = "(item, index) in newLists" v-bind:key = "item.id">
+                <p>{{item.title}} {{item.id}}</p>
+                <span v-if="item.new">新</span>
+            </li>
+        </ul>
+
+        <div v-for = "(value, key, index) in userInfo">{{value}}----{{key}}----{{index}}</div>
+    </div>
+
+    <script>
+
+        //v-for item/index 
+        // v-bind:key 更好的服用元素
+
+        // 使用索引更改数组和更新视图
+        //vm.newLists.push({title: "上课了方式结案的咖啡机",new: true,id: 5})
+        //Vue.set(vm.newLists,6,{title: "上课了方式结案的咖啡机",new: true,id: 6})
+        //vm.$set(vm.newLists, 7, {title: "上课了方式结案的咖啡机",new: true,id: 7})
+        // vm.newLists.splice(10,1,{title: "上课了方式结案的咖啡机",new: true,id: 10})
+
+        //使更改对象的数据和视图的更新
+        //Vue.set(vm.userInfo, "sex", "boy")
+
+
+        const vm = new Vue({
+            el: '#app',
+            userInfo: {
+                name: "cgs",
+                age: 18
+            },
+            data: {
+                userInfo: {
+                    name: "cgs",
+                    age: 18
+                },
+                newLists: [
+                    {
+                        title: "上课了方式结案的咖啡机",
+                        new: true,
+                        id: 0
+                    },
+                    {
+                        title: "上课了方式结案的咖啡机",
+                        new: false,
+                        id: 1
+                    },
+                    {
+                        title: "上课了方式结案的咖啡机",
+                        new: false,
+                        id: 2
+                    },
+                    {
+                        title: "上课了方式结案的咖啡机",
+                        new: false,
+                        id: 3
+                    },
+                    {
+                        title: "上课了方式结案的咖啡机",
+                        new: true,
+                        id: 4
+                    }
+                ]
+            },
+            methods: {
+
+            }
+
+        })
+    </script>
+
+</body>
+</html>

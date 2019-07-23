@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    
+    <div id="app">{{name}}
+        <a v-bind:href="url">vuejs</a>
+        <button v-on:click= "changeName">click</button>
+
+    </div>
+    
+    
+    <script>
+        // v-bind:href =>:href
+        // v-on:click => @click
+        // v-html => innerHtml
+        // v-text => innerText
+        new Vue({
+            el: '#app',
+            data: {
+                name: 'cgx',
+                url: 'https://cn.vuejs.org/v2/guide/'
+            },
+            methods: {
+                changeName() {
+                    this.name = this.name + '1';
+                    console.log(1);
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

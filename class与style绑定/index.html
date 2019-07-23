@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/vue/2.5.18-beta.0/vue.js"></script>
+
+    <style>
+        p{
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: #fff;
+            background-color: red;
+        }
+
+        p.active{
+            background-color: pink;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="app">
+        <button v-on:click = "showOrHide">显示/隐藏</button>
+        <!-- <p 
+        v-bind:class = "[active]" 
+        v-on:click = "changeColor"
+        v-bind:style = "[styleObj, colorObj]"
+        v-if = ""
+        v-show = "show"
+        >cgx</p> -->
+        <div v-if = "show">
+            <span>用户名</span>
+            <input type="text" key = "username">
+        </div>
+        <div v-else>
+            <span>密码</span>
+            <input type="text" key = "password">
+        </div>
+    </div>
+
+    <script>
+
+        // class => {} []
+        // {} => key/value -> Boolean
+        // [] => class name
+
+
+        //显示或隐藏
+        //v-if =>
+
+        //v-if v-else 
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                activeBool: false,
+                active: '',
+                styleObj: {
+                    width: '200px',
+                    lineHeight: '200px'
+                },
+                colorObj: {
+                    backgroundColor: 'blue'
+                },
+                show: true
+            },
+            methods: {
+                changeColor() {
+                    // this.activeBool = !this.activeBool;
+                    this.active = this.active === 'active' ? '' : 'active';
+                },
+                showOrHide() {
+                    console.log(1)
+                    this.show = !this.show
+                }
+                
+            }
+        })
+    </script>
+    
+</body>
+</html>

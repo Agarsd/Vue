@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    
+    <div id="app">
+        <!-- {{describe}} {{age}} -->
+        {{describe}} {{age}}
+    </div>
+    <script>
+    
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            name: 'cgx',
+            looks: 'handsome',
+            // describe: "cgx handsome",
+            age: '18'
+            // describe: "cgx handsome"
+        },
+        // methods: {
+        //     describe() {
+        //         console.log('------methods------')
+        //         return this.name + ' ' + this.looks; 
+        //     }
+        // },
+        // watch: {
+        //     name() {
+        //         this.describe = this.name + ' ' + this.looks;
+        //     },
+        //     looks() {
+        //         this.describe = this.name + ' ' + this.looks;
+        //     }
+        // },
+        
+        computed: {
+            // describe() {
+            //     console.log('-----computed-------')
+            //     return this.name + '' + this.looks;
+            // }
+
+            describe: {
+                get() {
+                    return this.name + ' ' + this.looks;
+                },
+                set(value) {
+                    console.log(value)
+                    const arr = value.split(' ');
+                    console.log(arr)
+                    this.name = arr[0];
+                    this.looks = arr[1];
+
+                }
+            }
+        }
+    })
+
+    </script>
+
+</body>
+</html>
